@@ -1,7 +1,7 @@
 package rest
 
 import (
-	"library-system/internal/handlers"
+	"task-management/internal/handlers"
 
 	"github.com/gorilla/mux"
 )

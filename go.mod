@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.2
-	github.com/go-playground/validator/v10 v10.27.0
+	github.com/go-playground/validator v10.27.0
 	github.com/gofrs/uuid v4.4.0+incompatible
 	github.com/gorilla/mux v1.8.1
 	github.com/joho/godotenv v1.5.1
@@ -25,6 +25,7 @@ require (
 	github.com/go-openapi/swag v0.19.15 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
+	github.com/go-playground/validator v9.31.0+incompatible
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/pgx/v5 v5.6.0 // indirect

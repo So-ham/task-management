@@ -1,10 +1,10 @@
 package handlers
 
 import (
-	v1 "library-system/internal/handlers/v1"
-	"library-system/internal/services"
+	v1 "task-management/internal/handlers/v1"
+	"task-management/internal/services"
 
-	"github.com/go-playground/validator/v10"
+	"github.com/go-playground/validator"
 )
 
 type Handler struct {

@@ -6,14 +6,14 @@ import (
 	"net/http"
 	"os"
 
-	_ "library-system/docs"
-	"library-system/internal/db/postgres"
-	"library-system/internal/handlers"
-	"library-system/internal/models"
-	"library-system/internal/services"
-	"library-system/internal/web/rest"
+	_ "task-management/docs"
+	"task-management/internal/db/postgres"
+	"task-management/internal/handlers"
+	"task-management/internal/models"
+	"task-management/internal/services"
+	"task-management/internal/web/rest"
 
-	"github.com/go-playground/validator/v10"
+	"github.com/go-playground/validator"
 	"github.com/joho/godotenv"
 	"github.com/rs/cors"
 	httpSwagger "github.com/swaggo/http-swagger/v2"
@@ -53,7 +53,7 @@ func main() {
 
 	allowedOrigins := []string{"http://localhost:3000"}
 	if os.Getenv("ENV") == "prod" {
-		allowedOrigins = []string{"https://library-system-frontend.vercel.app"}
+		allowedOrigins = []string{"https://task-management-frontend.vercel.app"}
 	}
 
 	c := cors.New(cors.Options{
